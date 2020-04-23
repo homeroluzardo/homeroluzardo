@@ -18,19 +18,16 @@ export default class Menu extends Component {
             />
           </Link>
           <button
-            className="navbar-toggle"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-target="#collapsibleNavbar"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
             className="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
+            id="collapsibleNavbar"
           >
             <ul className="navbar-nav">
               <li className="nav-item active mr-3">
