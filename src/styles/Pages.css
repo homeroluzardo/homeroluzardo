@@ -1,0 +1,63 @@
+.myContainer {
+  background: #1d1d1d;
+}
+
+.subtitle,
+.blockquote {
+  font-family: "Montserrat", sans-serif;
+}
+
+.subtitle {
+  color: #ff9a00;
+}
+
+.blockquote {
+  padding-top: 2.5%;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .myContainer {
+    padding: 1.5rem !important;
+    margin-top: 1.5rem !important;
+  }
+
+  .subtitle,
+  .blockquote {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .blockquote {
+    font-size: 16px;
+  }
+}
+
+/* CSS Form */
+
+.btn-submit {
+  font-family: "Montserrat", sans-serif;
+}
+
+#inputName {
+  margin-top: 3.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+#inputEmail,
+#inputSubject,
+#inputMessage {
+  margin-top: 1.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 576px) {
+  #inputName,
+  #inputEmail,
+  #inputSubject,
+  #inputMessage {
+    margin-top: 4%;
+  }
+}

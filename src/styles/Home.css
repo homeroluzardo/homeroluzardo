@@ -1,0 +1,19 @@
+.home-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+.my-name {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .title-name {
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-think {
+    font-size: 1em;
+  }
+}
