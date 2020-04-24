@@ -18,16 +18,19 @@ export default class Menu extends Component {
             />
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler navbar-dark"
             type="button"
             data-toggle="collapse"
-            data-target="#collapsibleNavbar"
+            data-target="#navbarSupportedContent"
+            aria-expanded="false"
+            aria-controls="navbarSupportedContent"
+            aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
             className="collapse navbar-collapse justify-content-end"
-            id="collapsibleNavbar"
+            id="navbarSupportedContent"
           >
             <ul className="navbar-nav">
               <li className="nav-item active mr-3">
@@ -35,39 +38,25 @@ export default class Menu extends Component {
                   <u>Home</u>
                 </Link>
               </li>
-              <li className="nav-item active mr-3">
+              <li className="nav-item mr-3">
                 <Link className="nav-link text-white" to="/profile">
                   <u>Profile</u>
                 </Link>
               </li>
-              <li className="nav-item active mr-3">
+              <li className="nav-item mr-3">
                 <Link className="nav-link text-white" to="/skills">
                   <u>Skills</u>
                 </Link>
               </li>
-              <li className="nav-item active mr-3">
+              <li className="nav-item mr-3">
                 <Link className="nav-link text-white" to="/work">
                   <u>Work</u>
                 </Link>
               </li>
-              <li className="nav-item active mr-3">
+              <li className="nav-item mr-3">
                 <Link className="nav-link text-white" to="/contact">
                   <u>Contact</u>
                 </Link>
-              </li>
-              <li className="nav-item active mr-3">
-                <div
-                  className="btn-group btn-group-sm mt-1"
-                  role="group"
-                  aria-label="Basic example"
-                >
-                  {/* <button type="button" className="btn btn-dark btn-eng">
-                    Eng
-                  </button>
-                  <button type="button" className="btn btn-dark btn-spa">
-                    Esp
-                  </button> */}
-                </div>
               </li>
             </ul>
           </div>
