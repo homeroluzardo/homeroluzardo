@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import LogoHomero from "../images/LogoHomero.png";
 import "../styles/Menu.css";
 import { Link } from "react-router-dom";
-import $ from "jquery";
 
 export default class Menu extends Component {
   render() {
@@ -34,27 +33,27 @@ export default class Menu extends Component {
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav">
-              <li className="nav-item active mr-3" onClick="collapse">
+              <li className="nav-item active mr-3">
                 <Link className="nav-link text-white" to="/">
                   <u>Home</u>
                 </Link>
               </li>
-              <li className="nav-item mr-3" onClick="collapse">
+              <li className="nav-item mr-3">
                 <Link className="nav-link text-white" to="/profile">
                   <u>Profile</u>
                 </Link>
               </li>
-              <li className="nav-item mr-3" onClick="collapse">
+              <li className="nav-item mr-3">
                 <Link className="nav-link text-white" to="/skills">
                   <u>Skills</u>
                 </Link>
               </li>
-              <li className="nav-item mr-3" onClick="collapse">
+              <li className="nav-item mr-3">
                 <Link className="nav-link text-white" to="/work">
                   <u>Work</u>
                 </Link>
               </li>
-              <li className="nav-item mr-3" onClick="collapse">
+              <li className="nav-item mr-3">
                 <Link className="nav-link text-white" to="/contact">
                   <u>Contact</u>
                 </Link>
