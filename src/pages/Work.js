@@ -18,7 +18,8 @@ function Work() {
       <blockquote className="blockquote text-white">
         <p className="mb-0">Convierte Más. Miami - April 2019 to Present.</p>
         <footer className="blockquote-footer text-white">
-          Marketing Funnel Creator. (Using HTML, CSS, Javascript, Bootstrap).
+          Marketing Funnel Creator. (Using HTML, CSS, Javascript, Bootstrap,
+          Elementor).
         </footer>
         <footer className="blockquote-footer text-white">
           Video Editing (Screenflow, iMovie, Final Cut Pro).

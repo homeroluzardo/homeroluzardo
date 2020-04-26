@@ -4,6 +4,14 @@ import "../styles/Menu.css";
 import { Link } from "react-router-dom";
 
 export default class Menu extends Component {
+  hideNavBar() {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
+    ) {
+      document.getElementsByClassName("navbar-toggler")[0].click();
+    }
+  }
+
   render() {
     return (
       <div className="container-fluid p-0">
@@ -22,9 +30,6 @@ export default class Menu extends Component {
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
-            aria-expanded="false"
-            aria-controls="navbarSupportedContent"
-            aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -34,27 +39,47 @@ export default class Menu extends Component {
           >
             <ul className="navbar-nav">
               <li className="nav-item active mr-3">
-                <Link className="nav-link text-white" to="/">
+                <Link
+                  className="nav-link text-white"
+                  to="/"
+                  onClick={this.hideNavBar}
+                >
                   <u>Home</u>
                 </Link>
               </li>
               <li className="nav-item mr-3">
-                <Link className="nav-link text-white" to="/profile">
+                <Link
+                  className="nav-link text-white"
+                  to="/profile"
+                  onClick={this.hideNavBar}
+                >
                   <u>Profile</u>
                 </Link>
               </li>
               <li className="nav-item mr-3">
-                <Link className="nav-link text-white" to="/skills">
+                <Link
+                  className="nav-link text-white"
+                  to="/skills"
+                  onClick={this.hideNavBar}
+                >
                   <u>Skills</u>
                 </Link>
               </li>
               <li className="nav-item mr-3">
-                <Link className="nav-link text-white" to="/work">
+                <Link
+                  className="nav-link text-white"
+                  to="/work"
+                  onClick={this.hideNavBar}
+                >
                   <u>Work</u>
                 </Link>
               </li>
               <li className="nav-item mr-3">
-                <Link className="nav-link text-white" to="/contact">
+                <Link
+                  className="nav-link text-white"
+                  to="/contact"
+                  onClick={this.hideNavBar}
+                >
                   <u>Contact</u>
                 </Link>
               </li>
