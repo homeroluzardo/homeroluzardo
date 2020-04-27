@@ -11,7 +11,7 @@ function Work() {
           4Geeks Academy, Internship. Miami - October 2019 to Present.
         </p>
         <footer className="blockquote-footer text-white">
-          Testing Javascript exercises using Jest with students at the Academy.
+          Testing Javascript exercises with students at the Academy.
         </footer>
       </blockquote>
 

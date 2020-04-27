@@ -17,7 +17,7 @@ function Skills() {
       </blockquote>
 
       <blockquote className="blockquote text-white">
-        <p className="mb-0">Wordpress, Elementor</p>
+        <p className="mb-0">Wordpress, Elementor.</p>
         <footer className="blockquote-footer text-white">3 years.</footer>
       </blockquote>
 
