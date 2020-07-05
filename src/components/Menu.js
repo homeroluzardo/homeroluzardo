@@ -74,7 +74,7 @@ export default class Menu extends Component {
                   <u>Work</u>
                 </Link>
               </li>
-              <li className="nav-item mr-3">
+              {/* <li className="nav-item mr-3">
                 <Link
                   className="nav-link text-white"
                   to="/contact"
@@ -82,7 +82,7 @@ export default class Menu extends Component {
                 >
                   <u>Contact</u>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>

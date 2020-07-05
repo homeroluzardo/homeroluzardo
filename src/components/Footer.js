@@ -48,14 +48,14 @@ export default class Footer extends Component {
               >
                 <i className="fab fa-github mr-3 ml-3"></i>
               </a>
-              {/* <a
-                href="mailto:homeroeluzardo@gmail.com?subject=Have%20a%20question%20or%20want%20to%20work%20together?&body=Hello..."
+              <a
+                href="mailto:homeroluzardo@icloud.com?subject=Have%20a%20question%20or%20want%20to%20work%20together?&body=Hello..."
                 title="Email me!"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fas fa-envelope mr-3 ml-3"></i>
-              </a> */}
+              </a>
             </div>
             <p className="text-center text-muted mb-0 copyright">
               <small>
