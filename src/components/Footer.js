@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../styles/Footer.css";
+const today = new Date();
+const year = today.getFullYear();
 
 export default class Footer extends Component {
   render() {
@@ -59,7 +61,7 @@ export default class Footer extends Component {
             </div>
             <p className="text-center text-muted mb-0 copyright">
               <small>
-                Copyright © 2020 Homero Luzardo. All rights reserved.
+                Copyright © {year} Homero Luzardo. All rights reserved.
               </small>
             </p>
             <p className="text-center text-muted mb-0 copyright">

@@ -1,5 +1,8 @@
+
+
 .myContainer {
   background: #1d1d1d;
+  border-radius: 10px;
 }
 
 .subtitle,
@@ -16,10 +19,24 @@
   color: white;
 }
 
+.profile_pic {
+  width: 180px;
+  float: right;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 @media (max-width: 576px) {
   .myContainer {
     padding: 1.5rem !important;
     margin-top: 1.5rem !important;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
+  }
+
+  .profile_pic {
+    width: 130px;
   }
 
   .subtitle,
