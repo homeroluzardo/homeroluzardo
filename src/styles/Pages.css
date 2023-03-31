@@ -26,6 +26,12 @@
   margin-right: 5%;
 }
 
+.work_date {
+  font-style: italic;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5)
+}
+
 @media (max-width: 576px) {
   .myContainer {
     padding: 1.5rem !important;
@@ -52,6 +58,7 @@
   }
 }
 
+
 /* CSS Form */
 
 .btn-submit {
@@ -77,4 +84,76 @@
   #inputMessage {
     margin-top: 4%;
   }
+}
+
+/* Logos Skills Page */
+
+.skillset>div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.skillset>div>div {
+  background: var(--white);
+  border-radius: .2rem;
+}
+
+.skillset img {
+  cursor: context-menu;
+  max-width: 10rem;
+  max-height: 5rem;
+  padding: 0.5rem;
+}
+
+
+.skillset>div>div {
+  position: relative;
+  margin: auto;
+}
+
+.skillset span {
+  width: 120px;
+  background-color: #476dfe;
+  text-align: center;
+  padding: .5rem 0;
+  border-radius: .5rem;
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  left: 50%;
+  transform: translate(-60px, 10px);
+  transition: transform .3s ease, opacity .3s ease;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.skillset>div>div:hover span {
+  opacity: 1;
+  transform: translate(-60px, 0px);
+}
+
+.skillset span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #476dfe transparent transparent transparent;
+}
+
+.skillset .tooltip {
+  color: white
+}
+
+@media (max-width: 991px) {
+  .skillset>div {
+      grid-template-columns: 1fr 1fr 1fr;
+}
+.marg_top8 {
+  margin-top: 8%;
+}
 }

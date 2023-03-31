@@ -13,9 +13,10 @@ html {
   height: 100%;
 }
 
+
 @media (max-width: 768px) {
   body {
     /* background: #476dfe; */
-    background: linear-gradient(90deg, #ff9900 50%, #476dfe 50%);
+    background: linear-gradient(90deg, #ff9900 72%, #476dfe 28%); 
   }
 }
