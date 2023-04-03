@@ -8,12 +8,19 @@ export default class Home extends Component {
       <div className="container-fluid mt-5">
         <div className="row">
           <div className="col-sm text-center my-auto m-3">
-            <h2 className="home-title text-white title-name">
+            <h1 className="home-title text-white title-name hello">
+              <b>Hello!</b>
+            </h1>
+
+            <h1 className="home-title text-white title-name name">
               <b>
-                Hello, I'm <span className="my-name">HOMERO LUZARDO</span>. I'm
-                a front-end web developer.
+                I'm <span className="my-name">Homero Luzardo.</span>
               </b>
-            </h2>
+            </h1>
+
+            <h3 className="home-title text-white title-name fdev">
+              <b>I'm a Front-end Web Developer.</b>
+            </h3>
           </div>
           <div className="col-sm text-center m-3">
             <img
@@ -25,11 +32,11 @@ export default class Home extends Component {
             />
           </div>
           <div className="col-sm text-center my-auto m-3">
-            <h5 className="home-title text-white title-think">
-              Think smart and make it simple!
-              <br />
-              Turn your ideas into reality.
-            </h5>
+            <h4 className="home-title text-white title-think">
+              Think smart and make it simple! Turn your{" "}
+              <span className="think_underline">ideas</span> into&nbsp;
+              <span className="think_underline">reality</span>.
+            </h4>
           </div>
         </div>
       </div>

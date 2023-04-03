@@ -30,3 +30,49 @@
 .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.7) !important;
 }
+
+
+
+
+
+ul u {
+  text-decoration: none;
+  border-bottom: solid white 0.5px;
+}
+
+
+/*
+u {
+  text-decoration: none;
+}
+
+@media (min-width: 991px) {
+li {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+li:first-child a {
+border-bottom: solid white 2px;
+}
+
+li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+}
+*/

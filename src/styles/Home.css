@@ -1,19 +1,52 @@
 .home-title {
   font-family: "Montserrat", sans-serif;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.title-name {
+  font-size: 40px;
+}
+
+.fdev, .hello {
+  font-size: 26px;
+}
+
+.think_underline {
+text-decoration: underline;
 }
 
 .my-name {
-  color: white;
+  color: black;
+}
+
+.title-think {
+  font-weight: 800;
+line-height: 1.3;
 }
 
 @media (max-width: 768px) {
   .title-name {
-    font-size: 1.25em;
+    font-size: 1.20em;
+  }
+  .name {
+    font-size: 1.75em;
   }
 }
 
 @media (max-width: 768px) {
   .title-think {
-    font-size: 1em;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 769px) {
+  .home-title {
+    margin-left: 15%;
+    margin-right: 0%;
+  }
+  .title-think {
+    margin-right: 15%;
+    margin-left: 0%;
   }
 }
