@@ -2,6 +2,7 @@
   "name": "homeroluzardo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/build",
   "dependencies": {
     "@formspree/react": "^2.4.1",
     "@svgr/webpack": "^6.2.1",
@@ -20,7 +21,7 @@
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
