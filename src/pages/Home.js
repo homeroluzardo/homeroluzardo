@@ -20,7 +20,7 @@ export default class Home extends Component {
             </h1>
 
             <h3 className="home-title text-white title-name fdev">
-              <b>I am a Frontend Web Developer.</b>
+              <b>I am a Front-end Web Developer.</b>
             </h3>
             <p className="home_paragraph">
               I have the potential to help businesses achieve their goals by
