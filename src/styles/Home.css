@@ -1,4 +1,4 @@
-.home-title {
+.home-title, p {
   font-family: "Montserrat", sans-serif;
   text-align: left;
   margin-bottom: 0px;
@@ -6,6 +6,13 @@
 
 .title-name {
   font-size: 40px;
+}
+
+.home_paragraph {
+  margin-top: 2.5%;
+  font-size: 17px;
+  color: white;
+  
 }
 
 .fdev, .hello {
@@ -22,7 +29,16 @@ text-decoration: underline;
 
 .title-think {
   font-weight: 800;
-line-height: 1.3;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.btn-dark {
+  margin-top: 5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  padding: 1% 2%;
+  background-color: #1E1E1E;
 }
 
 @media (max-width: 768px) {
@@ -30,23 +46,44 @@ line-height: 1.3;
     font-size: 1.20em;
   }
   .name {
-    font-size: 1.75em;
+    font-size: 1.66em;
+  }
+  .copyright {
+    font-size: 0.8em;
   }
 }
 
 @media (max-width: 768px) {
   .title-think {
     font-size: 1.1em;
+    text-align: center;
   }
+    .home_paragraph {
+      font-size: 0.7em;
+    }
+    .img-h {
+      width: 90%;
+    }
+    .btn-dark {
+      font-size: 0.85rem;
+      padding: 3% 6%;
+      margin-bottom: 10%;
+    }
+    .desktop {
+      display: none;
+    }
 }
 
 @media (min-width: 769px) {
-  .home-title {
+  .home-title, .home_paragraph {
     margin-left: 15%;
     margin-right: 0%;
   }
   .title-think {
     margin-right: 15%;
     margin-left: 0%;
+  }
+  .mobile {
+    display: none;
   }
 }

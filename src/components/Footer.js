@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 const today = new Date();
 const year = today.getFullYear();
@@ -50,14 +51,18 @@ export default class Footer extends Component {
               >
                 <i className="fab fa-github mr-3 ml-3"></i>
               </a>
-              <a
+              {/*} <a
                 href="mailto:homeroluzardo@icloud.com?subject=Have%20a%20question%20or%20want%20to%20work%20together?&body=Hello..."
-                title="Email me!"
+                title="Message me!"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fas fa-envelope mr-3 ml-3"></i>
-              </a>
+    </a>*/}
+
+              <Link to="/contact" title="Message me!">
+                <i className="fas fa-envelope mr-3 ml-3"></i>
+              </Link>
             </div>
             <p className="text-center text-muted mb-0 copyright">
               <small>
