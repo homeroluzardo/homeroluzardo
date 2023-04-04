@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/homeroluzardo/static/css/main.5315e4a4.css",
+    "main.js": "/homeroluzardo/static/js/main.03a1a2a5.js",
+    "static/media/CodeH.png": "/homeroluzardo/static/media/CodeH.69b92fd744e8dd3a0839.png",
+    "static/media/IMG_1841.png": "/homeroluzardo/static/media/IMG_1841.c95cab22ca921582c0d0.png",
+    "static/media/thankyou_form.jpg": "/homeroluzardo/static/media/thankyou_form.fdb5de28f5115bc93f56.jpg",
+    "static/media/screenflow.png": "/homeroluzardo/static/media/screenflow.6ca56ef460fac8a97553.png",
+    "static/media/LogoHomero.png": "/homeroluzardo/static/media/LogoHomero.93b68f93743956760612.png",
+    "static/media/leadpages.png": "/homeroluzardo/static/media/leadpages.7bfa5d2661de5f3861d3.png",
+    "static/media/finalcut.png": "/homeroluzardo/static/media/finalcut.939844c6f43f6565e50e.png",
+    "static/media/imovie.png": "/homeroluzardo/static/media/imovie.4762c3cb8665be14dbf4.png",
+    "index.html": "/homeroluzardo/index.html",
+    "main.5315e4a4.css.map": "/homeroluzardo/static/css/main.5315e4a4.css.map",
+    "main.03a1a2a5.js.map": "/homeroluzardo/static/js/main.03a1a2a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5315e4a4.css",
+    "static/js/main.03a1a2a5.js"
+  ]
+}
