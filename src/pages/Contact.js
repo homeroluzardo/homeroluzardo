@@ -49,6 +49,7 @@ function ContactForm() {
           name="email"
           aria-describedby="emailHelp"
           placeholder="Enter email"
+          required
         />{" "}
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <br />
@@ -62,6 +63,7 @@ function ContactForm() {
           name="message"
           placeholder="Type message ..."
           rows="5"
+          required
         />
         <ValidationError
           prefix="Message"

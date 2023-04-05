@@ -30,7 +30,7 @@
 .work_date {
   font-style: italic;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.5)
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 576px) {
@@ -56,6 +56,9 @@
   }
   .blockquote {
     font-size: 16px;
+  }
+  .work_date {
+  margin-bottom: 4%;
   }
 }
 

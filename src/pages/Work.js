@@ -7,8 +7,11 @@ function Work() {
       <h2 className="subtitle">Work</h2>
 
       <blockquote className="blockquote text-white">
-        <p className="mb-0">Marketing Agency & School Online: Convierte Más.</p>
+        <p className="mb-0 font-weight-bold">
+          Marketing Agency & School Online: Convierte Más.
+        </p>
         <p className="work_date">Miami - April 2019 to November 2021.</p>
+
         <footer className="blockquote-footer text-white">
           Marketing Funnel Creator. (Using HTML, CSS, Javascript, Bootstrap,
           Elementor).
@@ -39,10 +42,11 @@ function Work() {
       </blockquote>
 
       <blockquote className="blockquote text-white">
-        <p className="mb-0">
+        <p className="mb-0 font-weight-bold">
           Training for Real Estate Agents: The Montiel Organization.
         </p>
         <p className="work_date">Miami - January 2017 to March 2019.</p>
+
         <footer className="blockquote-footer text-white">
           Video Editing (Screenflow, iMovie, Final Cut Pro).
         </footer>
@@ -61,8 +65,11 @@ function Work() {
       </blockquote>
 
       <blockquote className="blockquote text-white">
-        <p className="mb-0">Coding Bootcamp: 4Geeks Academy (Internship).</p>
+        <p className="mb-0 font-weight-bold">
+          Coding Bootcamp: 4Geeks Academy (Internship).
+        </p>
         <p className="work_date">Miami - October 2019 to April 2022.</p>
+
         <footer className="blockquote-footer text-white">
           Testing Javascript exercises with students at the Academy.
         </footer>

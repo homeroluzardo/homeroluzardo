@@ -59,14 +59,14 @@ text-decoration: underline;
     text-align: center;
   }
     .home_paragraph {
-      font-size: 0.7em;
+      font-size: 0.9em;
     }
     .img-h {
       width: 90%;
     }
     .btn-dark {
       font-size: 0.85rem;
-      padding: 3% 6%;
+      padding: 3% 12% !important;
       margin-bottom: 10%;
     }
     .desktop {
