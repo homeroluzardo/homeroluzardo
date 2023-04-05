@@ -40,7 +40,9 @@ export default class Home extends Component {
               <div className="row">
                 <div className="col text-center">
                   <Link to="/contact">
-                    <button className="btn btn-dark">Reach Out To Me</button>
+                    <button className="btn btn-dark btn-home-mob">
+                      &#60; Reach Out To Me &#47;&#62;
+                    </button>
                   </Link>
                 </div>
               </div>
@@ -67,7 +69,9 @@ export default class Home extends Component {
           <div className="row">
             <div className="col text-center">
               <Link to="/contact">
-                <button className="btn btn-dark">Reach Out To Me</button>
+                <button className="btn btn-dark">
+                  &#60; Reach Out To Me &#47;&#62;
+                </button>
               </Link>
             </div>
           </div>

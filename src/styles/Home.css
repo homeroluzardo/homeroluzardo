@@ -64,9 +64,12 @@ text-decoration: underline;
     .img-h {
       width: 90%;
     }
-    .btn-dark {
-      font-size: 0.85rem;
-      padding: 3% 12% !important;
+    .btn-home-mob {
+      font-size: 1rem;
+      padding-top: 3%;
+      padding-bottom:3%;
+      padding-left: 12%;
+      padding-right: 12%;
       margin-bottom: 10%;
     }
     .desktop {
