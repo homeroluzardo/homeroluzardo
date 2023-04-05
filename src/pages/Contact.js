@@ -53,7 +53,7 @@ function ContactForm() {
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <br />
         <br />
-        <label for="txtarea" className="text-light labels_form">
+        <label htmlFor="txtarea" className="text-light labels_form">
           Your Message:
         </label>
         <textarea

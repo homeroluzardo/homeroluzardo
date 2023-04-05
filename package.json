@@ -1,7 +1,7 @@
 {
   "name": "homeroluzardo",
   "version": "0.1.0",
-  "homepage": "http://homeroluzardo.github.io/homeroluzardo",
+  "homepage": "homeroluzardo",
   "private": false,
   "dependencies": {
     "@formspree/react": "^2.4.1",
