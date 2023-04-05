@@ -16,7 +16,7 @@ export default class Menu extends Component {
     return (
       <div className="container-fluid p-0">
         <nav className="navbar navbar-expand-lg navbar-light">
-          <Link className="navbar-brand" to="/homeroluzardo">
+          <Link className="navbar-brand" to="/">
             <img
               src={LogoHomero}
               width="70"
@@ -41,7 +41,7 @@ export default class Menu extends Component {
               <li className="nav-item active mr-3">
                 <Link
                   className="nav-link text-white"
-                  to="/homeroluzardo"
+                  to="/"
                   onClick={this.hideNavBar}
                 >
                   <u>Home</u>
