@@ -120,16 +120,16 @@
 }
 
 .skillset span {
-  width: 120px;
+  width: 140px;
   background-color: #476dfe;
   text-align: center;
-  padding: .5rem 0;
+  padding: .5rem .5rem;
   border-radius: .5rem;
   position: absolute;
   z-index: 1;
-  top: -40px;
+  top: -60px;
   left: 50%;
-  transform: translate(-60px, 10px);
+  transform: translate(-70px, 10px);
   transition: transform .3s ease, opacity .3s ease;
   pointer-events: none;
   opacity: 0;
@@ -137,7 +137,7 @@
 
 .skillset>div>div:hover span {
   opacity: 1;
-  transform: translate(-60px, 0px);
+  transform: translate(-70px, 0px);
 }
 
 .skillset span:after {
