@@ -60,6 +60,9 @@
   .work_date {
   margin-bottom: 4%;
   }
+  .click-image {
+    font-size: 13px !important;
+  }
 }
 
 
@@ -153,6 +156,10 @@
 
 .skillset .tooltip {
   color: white
+}
+
+.click-image {
+  font-size: 16px;
 }
 
 @media (max-width: 991px) {

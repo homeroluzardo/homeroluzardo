@@ -33,11 +33,13 @@ function Skills() {
         <h2 className="subtitle">Skills</h2>
 
         <blockquote className="blockquote text-white">
-          <p className="mb-0 font-italic">Click on each image for details.</p>
+          <p className="mb-0 font-italic click-image">
+            Click on each image for details.
+          </p>
         </blockquote>
 
         <blockquote className="blockquote text-white">
-          <p className="mb-0">
+          <p className="mb-0 font-weight-bold">
             HTML 5, CSS 3, JavaScript, React, Node JS, JQuery, Npm, Bootstrap,
             Sass, Git, Github.
           </p>
@@ -134,7 +136,7 @@ function Skills() {
         </div>
 
         <blockquote className="blockquote text-white">
-          <p className="mb-0 marg_top8">
+          <p className="mb-0 marg_top8 font-weight-bold">
             ClickFunnels, Unbounce, Leadpages, Kajabi.
           </p>
           <footer className="blockquote-footer text-white">
@@ -178,7 +180,9 @@ function Skills() {
         </div>
 
         <blockquote className="blockquote text-white">
-          <p className="mb-0 marg_top8">Wordpress, Elementor.</p>
+          <p className="mb-0 marg_top8 font-weight-bold">
+            Wordpress, Elementor.
+          </p>
           <footer className="blockquote-footer text-white">
             3 years of experience.
           </footer>
@@ -205,7 +209,7 @@ function Skills() {
         </div>
 
         <blockquote className="blockquote text-white">
-          <p className="mb-0 marg_top8">
+          <p className="mb-0 marg_top8 font-weight-bold">
             Hubspot, ActiveCampaign, Keap, Mailchimp.
           </p>
           <footer className="blockquote-footer text-white">
@@ -249,7 +253,9 @@ function Skills() {
         </div>
 
         <blockquote className="blockquote text-white">
-          <p className="mb-0 marg_top8">Final Cut Pro, Screenflow 8, iMovie.</p>
+          <p className="mb-0 marg_top8 font-weight-bold">
+            Final Cut Pro, Screenflow 8, iMovie.
+          </p>
           <footer className="blockquote-footer text-white">
             3 years of experience.
           </footer>
