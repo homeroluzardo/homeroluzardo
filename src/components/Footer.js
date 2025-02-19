@@ -11,7 +11,8 @@ export default class Footer extends Component {
         <footer className="footer pt-3 pb-3">
           <div className="container-fluid">
             <div className="text-center">
-              <a
+      {/*        
+      <a
                 href="https://www.linkedin.com/in/homeroluzardo"
                 title="Linkedin"
                 target="_blank"
@@ -35,6 +36,7 @@ export default class Footer extends Component {
               >
                 <i className="fab fa-facebook-f mr-3 ml-3"></i>
               </a>
+              */}
               <a
                 href="https://twitter.com/homeroluzardo"
                 title="Twitter"
