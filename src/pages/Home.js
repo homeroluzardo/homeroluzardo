@@ -30,7 +30,7 @@ export default class Home extends Component {
             </p>
             <p className="home_paragraph">
               <b>
-                <i>Succeed in today's digital landscape.</i>
+                <i>Succeed in today's digital landscape!</i>
               </b>
             </p>
           </div>
