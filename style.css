@@ -428,7 +428,7 @@ ul { list-style: none; }
   padding-left: 1.2rem; position: relative;
 }
 .exp-list li::before {
-  content: '†'; position: absolute; left: 0;
+  content: 'â†’'; position: absolute; left: 0;
   color: var(--accent); font-size: 0.75rem; top: 0.15em;
 }
 
@@ -532,12 +532,12 @@ ul { list-style: none; }
    ========================================= */
 @media (max-width: 960px) {
   .hero {
-    grid-template-columns: 1fr; text-align: center;
+    grid-template-columns: 1fr; text-align: left;
     padding: 6rem 1.5rem 4rem; gap: 3rem;
   }
-  .hero-actions { justify-content: center; }
-  .hero-highlights { align-items: center; }
-  .scroll-indicator { left: 50%; transform: translateX(-50%); }
+  .hero-actions { justify-content: flex-start; }
+  .hero-highlights { align-items: flex-start; }
+  .scroll-indicator { left: 0; transform: none; }
   .hero-visual { order: -1; }
   .card-3 { left: -5%; }
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -560,7 +560,7 @@ ul { list-style: none; }
 }
 
 /* =========================================
-   TOUCH DEVICE HIDE CUSTOM CURSOR
+   TOUCH DEVICE â€” HIDE CUSTOM CURSOR
    ========================================= */
 @media (hover: none) and (pointer: coarse) {
   body { cursor: auto; }
