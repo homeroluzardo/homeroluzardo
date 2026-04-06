@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of Homero Luzardo, a Frontend Developer and Marketer focused on modern, elegant and high-performing web experiences." />
   <title>Homero Luzardo — Frontend Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,11 +21,12 @@
 
   <!-- NAV -->
   <nav id="navbar">
-    <div class="nav-logo">HL<span class="dot">.</span></div>
+    <a class="nav-logo" href="#home">HL<span class="dot">.</span></a>
     <ul class="nav-links">
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#profile" class="nav-link">Profile</a></li>
+      <li><a href="#tools" class="nav-link">Tools</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
     <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Let's Talk</button>
@@ -36,9 +38,10 @@
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobile-menu">
     <ul>
-      <li><a href="#about" class="mobile-link">About</a></li>
-      <li><a href="#skills" class="mobile-link">Skills</a></li>
-      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#profile" class="mobile-link">Profile</a></li>
+      <li><a href="#tools" class="mobile-link">Tools</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
       <li><a href="#contact" class="mobile-link">Contact</a></li>
     </ul>
   </div>
@@ -49,24 +52,28 @@
     <div class="hero-content">
       <div class="hero-badge">
         <span class="badge-dot"></span>
-        Available for work
+        Available for new projects
       </div>
+      <p class="hero-eyebrow reveal-fade">Professional portfolio</p>
       <h1 class="hero-title">
         <span class="line reveal-line">Homero</span>
         <span class="line reveal-line">Luzardo<span class="accent">.</span></span>
       </h1>
-      <p class="hero-sub reveal-fade">
-        Frontend Developer &amp; Digital Marketer<br />
-        based in Denver, Colorado 🏔️
-      </p>
+      <p class="hero-sub reveal-fade">Front-end Web Developer &amp; Marketer</p>
       <p class="hero-desc reveal-fade">
-        Think smart and make it simple.<br />
-        <em>Turn your ideas into reality.</em>
+        I help businesses achieve their goals by creating custom web solutions that meet their specific needs.
+        Reach a wider audience and generate more leads and sales through funnels.<br/>
+        <em>Succeed in today's digital landscape.</em>
       </p>
       <div class="hero-actions reveal-fade">
-        <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
-        <a href="#contact" class="btn-ghost">Contact Me</a>
+        <a class="btn-primary" href="#experience">View Experience</a>
+        <a class="btn-ghost" href="#contact">Let's Talk</a>
       </div>
+      <ul class="hero-highlights reveal-fade">
+        <li><span class="hl-dot"></span>Frontend development focused on clarity and results</li>
+        <li><span class="hl-dot"></span>Landing pages, funnels, webinars and membership sites</li>
+        <li><span class="hl-dot"></span>Technical and marketing tools working together</li>
+      </ul>
     </div>
     <div class="hero-visual">
       <div class="avatar-ring">
@@ -75,18 +82,9 @@
           <circle cx="100" cy="100" r="90" fill="none" stroke="var(--accent)" stroke-width="1" stroke-dasharray="4 8" />
         </svg>
       </div>
-      <div class="floating-card card-1">
-        <span class="card-icon">⚡</span>
-        <span>React</span>
-      </div>
-      <div class="floating-card card-2">
-        <span class="card-icon">🎨</span>
-        <span>CSS</span>
-      </div>
-      <div class="floating-card card-3">
-        <span class="card-icon">📈</span>
-        <span>Marketing</span>
-      </div>
+      <div class="floating-card card-1"><span class="card-icon">⚡</span><span>React</span></div>
+      <div class="floating-card card-2"><span class="card-icon">🎯</span><span>Funnels</span></div>
+      <div class="floating-card card-3"><span class="card-icon">📈</span><span>Marketing</span></div>
     </div>
     <div class="scroll-indicator">
       <span>Scroll</span>
@@ -94,185 +92,222 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about section" id="about">
+  <!-- STATS BAR -->
+  <section class="stats-bar" aria-label="Key highlights">
+    <div class="container stats-grid">
+      <article class="stat-item fade-up">
+        <strong>3+ Years</strong>
+        <span>Experience across frontend, funnels and marketing tools</span>
+      </article>
+      <article class="stat-item fade-up">
+        <strong>Frontend + Marketing</strong>
+        <span>Development aligned with lead generation and sales goals</span>
+      </article>
+      <article class="stat-item fade-up">
+        <strong>Think Smart</strong>
+        <span>Make it simple — turn your ideas into reality</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROFILE -->
+  <section class="section" id="profile">
     <div class="container">
-      <div class="section-label">01 — About</div>
+      <div class="section-label fade-up">02 — Profile</div>
       <div class="about-grid">
-        <div class="about-left">
-          <h2 class="section-title">Building digital experiences<br /><span class="accent-text">that convert.</span></h2>
+        <div class="about-left fade-up">
+          <h2 class="section-title">Frontend Developer<br /><span class="accent-text">and Marketer.</span></h2>
+          <p class="about-intro">I am a Frontend Developer and Marketer with the ability to research, analyze, and synthesize information into powerful digital solutions.</p>
         </div>
         <div class="about-right">
-          <p>I'm a <strong>Frontend Developer and Marketer</strong> with the ability to research, analyze, and synthesize information into powerful digital solutions.</p>
-          <p>I help businesses achieve their goals by creating custom web solutions that meet their specific needs. My work helps clients reach a wider audience and generate more leads and sales through optimized funnels.</p>
-          <p>Let's succeed together in today's digital landscape.</p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-num">5+</span>
-              <span class="stat-label">Years Experience</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">30+</span>
-              <span class="stat-label">Projects Built</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">100%</span>
-              <span class="stat-label">Commitment</span>
-            </div>
+          <div class="profile-cards">
+            <article class="profile-card fade-up">
+              <span class="card-tag">Objective</span>
+              <h3>Be the best web developer I can be</h3>
+              <p>My objective is simply to be the best web developer that I can be and to contribute to the technology industry all that I know and can do.</p>
+            </article>
+            <article class="profile-card fade-up">
+              <span class="card-tag">Mindset</span>
+              <h3>Constant learning and practical application</h3>
+              <p>I am passionate about learning and applying coding skills in the software development field.</p>
+            </article>
+            <article class="profile-card fade-up">
+              <span class="card-tag">Systems</span>
+              <h3>Plan, design and monitor information systems</h3>
+              <p>Redesigning systems when technological, methodological and organizational changes require it is part of how I approach digital work.</p>
+            </article>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section class="skills section" id="skills">
+  <!-- TOOLS -->
+  <section class="section tools-section" id="tools">
     <div class="container">
-      <div class="section-label">02 — Skills</div>
-      <h2 class="section-title">My <span class="accent-text">Toolkit</span></h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">🖥️</span>
-            <h3>Frontend</h3>
+      <div class="section-label fade-up">03 — Tools &amp; Skills</div>
+      <h2 class="section-title fade-up">Technologies and platforms<br /><span class="accent-text">I work with.</span></h2>
+      <div class="tools-grid">
+
+        <article class="tool-card fade-up">
+          <div class="tool-card-header">
+            <span class="project-badge">Frontend</span>
+            <h3>Core development stack</h3>
+            <p class="tool-exp">3 years of experience</p>
           </div>
-          <ul class="skill-list">
-            <li class="skill-item"><span class="skill-name">HTML5</span><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></li>
-            <li class="skill-item"><span class="skill-name">CSS3 / Sass</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></li>
-            <li class="skill-item"><span class="skill-name">JavaScript (ES6+)</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></li>
-            <li class="skill-item"><span class="skill-name">React</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">🔧</span>
-            <h3>Tools</h3>
+          <div class="chips">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            <span>React</span><span>Node JS</span><span>jQuery</span>
+            <span>npm</span><span>Bootstrap</span><span>Sass</span>
+            <span>Git</span><span>GitHub</span>
           </div>
-          <ul class="skill-list">
-            <li class="skill-item"><span class="skill-name">Git &amp; GitHub</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></li>
-            <li class="skill-item"><span class="skill-name">VS Code</span><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></li>
-            <li class="skill-item"><span class="skill-name">Figma</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></li>
-            <li class="skill-item"><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">📣</span>
-            <h3>Marketing</h3>
+        </article>
+
+        <article class="tool-card fade-up">
+          <div class="tool-card-header">
+            <span class="project-badge">Funnels</span>
+            <h3>Conversion and page-building tools</h3>
+            <p class="tool-exp">3 years of experience</p>
           </div>
-          <ul class="skill-list">
-            <li class="skill-item"><span class="skill-name">Funnel Strategy</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></li>
-            <li class="skill-item"><span class="skill-name">SEO</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></li>
-            <li class="skill-item"><span class="skill-name">Analytics</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></li>
-            <li class="skill-item"><span class="skill-name">Lead Generation</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></li>
-          </ul>
-        </div>
+          <div class="chips">
+            <span>ClickFunnels</span><span>Unbounce</span>
+            <span>Leadpages</span><span>Kajabi</span>
+          </div>
+        </article>
+
+        <article class="tool-card fade-up">
+          <div class="tool-card-header">
+            <span class="project-badge">CMS</span>
+            <h3>Website building on WordPress</h3>
+            <p class="tool-exp">3 years of experience</p>
+          </div>
+          <div class="chips">
+            <span>WordPress</span><span>Elementor</span>
+          </div>
+        </article>
+
+        <article class="tool-card fade-up">
+          <div class="tool-card-header">
+            <span class="project-badge">Automation</span>
+            <h3>Email marketing and CRM platforms</h3>
+            <p class="tool-exp">3 years of experience</p>
+          </div>
+          <div class="chips">
+            <span>HubSpot</span><span>ActiveCampaign</span>
+            <span>Keap</span><span>Mailchimp</span>
+          </div>
+        </article>
+
+        <article class="tool-card fade-up">
+          <div class="tool-card-header">
+            <span class="project-badge">Video</span>
+            <h3>Video editing tools</h3>
+            <p class="tool-exp">3 years of experience</p>
+          </div>
+          <div class="chips">
+            <span>Final Cut Pro</span><span>ScreenFlow 8</span><span>iMovie</span>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section class="projects section" id="projects">
+  <!-- EXPERIENCE -->
+  <section class="section experience-section" id="experience">
     <div class="container">
-      <div class="section-label">03 — Projects</div>
-      <h2 class="section-title">Selected <span class="accent-text">Work</span></h2>
-      <div class="projects-grid">
+      <div class="section-label fade-up">04 — Experience</div>
+      <h2 class="section-title fade-up">Work history and<br /><span class="accent-text">key responsibilities.</span></h2>
 
-        <article class="project-card">
-          <div class="project-num">01</div>
-          <div class="project-info">
-            <h3 class="project-title">Weather &amp; Date App</h3>
-            <p class="project-desc">A real-time weather application that displays current conditions, date, and time. Built with vanilla JavaScript and integrated weather API.</p>
-            <div class="project-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">API</span>
-              <span class="tag">CSS</span>
+      <div class="experience-list">
+
+        <article class="experience-card fade-up">
+          <div class="exp-header">
+            <div class="exp-title-group">
+              <span class="project-badge">Funnel Creator</span>
+              <h3>Marketing Agency &amp; School Online: Convierte Más</h3>
+              <p class="exp-date">📍 Miami &nbsp;·&nbsp; April 2019 – November 2021</p>
             </div>
-            <a href="https://github.com/homeroluzardo/date-weather-app" target="_blank" class="project-link">
-              View on GitHub →
-            </a>
+            <div class="exp-num">01</div>
           </div>
+          <ul class="exp-list">
+            <li>Marketing Funnel Creator using HTML, CSS, JavaScript, Bootstrap and Elementor.</li>
+            <li>Collected, reviewed and reported on metrics and daily performance.</li>
+            <li>Collected and analyzed customer data, demographics, preferences, needs and buying habits.</li>
+            <li>Built landing pages, webinars and membership sites via ClickFunnels to promote events and product launches.</li>
+            <li>Handled video editing with ScreenFlow, iMovie and Final Cut Pro.</li>
+            <li>Worked with email marketing platforms including Keap, ActiveCampaign, HubSpot and Mailchimp.</li>
+            <li>Provided technical support, staff training and troubleshooting as the internal digital expert.</li>
+          </ul>
         </article>
 
-        <article class="project-card">
-          <div class="project-num">02</div>
-          <div class="project-info">
-            <h3 class="project-title">JavaScript Calculator</h3>
-            <p class="project-desc">A fully functional calculator with clean UI and smooth interactions. Demonstrates core JavaScript logic and DOM manipulation skills.</p>
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
+        <article class="experience-card fade-up">
+          <div class="exp-header">
+            <div class="exp-title-group">
+              <span class="project-badge">Web Support</span>
+              <h3>Training for Real Estate Agents: The Montiel Organization</h3>
+              <p class="exp-date">📍 Miami &nbsp;·&nbsp; January 2017 – March 2019</p>
             </div>
-            <a href="https://github.com/homeroluzardo/Calculator" target="_blank" class="project-link">
-              View on GitHub →
-            </a>
+            <div class="exp-num">02</div>
           </div>
+          <ul class="exp-list">
+            <li>Video editing with ScreenFlow, iMovie and Final Cut Pro.</li>
+            <li>Email marketing work with Keap and ActiveCampaign.</li>
+            <li>Development and maintenance of web pages using WordPress, HTML5, CSS3 and JavaScript.</li>
+            <li>Performed upgrades, installed updates and supported staff with software and computer questions.</li>
+            <li>Conducted computer technology training with new staff.</li>
+          </ul>
         </article>
 
-        <article class="project-card">
-          <div class="project-num">03</div>
-          <div class="project-info">
-            <h3 class="project-title">iOS HelloWorld App</h3>
-            <p class="project-desc">First dive into native mobile development. A Swift-based iOS application showcasing the fundamentals of Apple's development ecosystem.</p>
-            <div class="project-tags">
-              <span class="tag">Swift</span>
-              <span class="tag">iOS</span>
-              <span class="tag">Xcode</span>
+        <article class="experience-card fade-up">
+          <div class="exp-header">
+            <div class="exp-title-group">
+              <span class="project-badge">Academy</span>
+              <h3>Coding Bootcamp: 4Geeks Academy Internship</h3>
+              <p class="exp-date">📍 Miami &nbsp;·&nbsp; October 2019 – April 2022</p>
             </div>
-            <a href="https://github.com/homeroluzardo/HelloWorld" target="_blank" class="project-link">
-              View on GitHub →
-            </a>
+            <div class="exp-num">03</div>
           </div>
+          <ul class="exp-list">
+            <li>Tested JavaScript exercises with students at the academy.</li>
+          </ul>
         </article>
 
-        <article class="project-card project-card--featured">
-          <div class="project-num">04</div>
-          <div class="project-info">
-            <h3 class="project-title">Personal Portfolio</h3>
-            <p class="project-desc">This very portfolio — a React single-page application with smooth navigation, animations, and responsive design showcasing all projects and skills.</p>
-            <div class="project-tags">
-              <span class="tag">React</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">CSS</span>
-            </div>
-            <a href="https://github.com/homeroluzardo/homeroluzardo" target="_blank" class="project-link">
-              View on GitHub →
-            </a>
-          </div>
-        </article>
-
-      </div>
-      <div class="projects-cta">
-        <a href="https://github.com/homeroluzardo" target="_blank" class="btn-ghost">View all on GitHub ↗</a>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact section" id="contact">
+  <section class="section contact-section" id="contact">
     <div class="container">
-      <div class="section-label">04 — Contact</div>
+      <div class="section-label fade-up">05 — Contact</div>
       <div class="contact-grid">
-        <div class="contact-left">
-          <h2 class="section-title">Let's build<br /><span class="accent-text">something great.</span></h2>
-          <p class="contact-desc">Have a project in mind? Looking to grow your business online? I'd love to help you turn your ideas into reality.</p>
-          <div class="contact-links">
-            <a href="https://github.com/homeroluzardo" target="_blank" class="contact-social">
-              <span class="social-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </span>
-              GitHub
+        <div class="contact-left fade-up">
+          <h2 class="section-title">Thanks for taking<br /><span class="accent-text">the time to reach out.</span></h2>
+          <p class="contact-desc">How can I help you today? I'm available for new projects, collaborations, or just a friendly conversation about web development and marketing.</p>
+          <div class="social-links">
+            <!-- <a href="https://www.linkedin.com/in/homeroluzardo" target="_blank" rel="noopener noreferrer" class="social-link">
+              <span class="social-icon">in</span> LinkedIn
             </a>
-            <a href="mailto:homero@homeroluzardo.com" class="contact-social">
-              <span class="social-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
-              </span>
-              Send an Email
+            <a href="https://www.instagram.com/homeroluzardo" target="_blank" rel="noopener noreferrer" class="social-link">
+              <span class="social-icon">ig</span> Instagram
+            </a>
+            <a href="https://www.facebook.com/homero.luzardo" target="_blank" rel="noopener noreferrer" class="social-link">
+              <span class="social-icon">fb</span> Facebook
+            </a> -->
+            <a href="https://twitter.com/homeroluzardo" target="_blank" rel="noopener noreferrer" class="social-link">
+              <span class="social-icon">tw</span> Twitter
+            </a>
+            <a href="https://github.com/homeroluzardo" target="_blank" rel="noopener noreferrer" class="social-link">
+              <span class="social-icon">gh</span> GitHub
             </a>
           </div>
+          <div class="contact-actions">
+            <a href="mailto:homeroluzardo@icloud.com" class="btn-primary">Email Me ✉️</a>
+            <a href="#home" class="btn-ghost">Back to Top ↑</a>
+          </div>
         </div>
-        <form class="contact-form" id="contact-form" novalidate>
+        <form class="contact-form fade-up" id="contact-form" novalidate>
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -296,8 +331,8 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-logo">HL<span class="dot">.</span></div>
-      <p class="footer-copy">© 2025 Homero Luzardo. Built with ❤️ in Denver, CO.</p>
-      <a href="#home" class="back-to-top" id="back-top">↑ Top</a>
+      <p class="footer-copy">© <span id="current-year"></span> Homero Luzardo. All rights reserved.</p>
+      <a href="#home" class="back-to-top">↑ Top</a>
     </div>
   </footer>
 
