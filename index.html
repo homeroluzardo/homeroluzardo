@@ -282,9 +282,28 @@
     <div class="container">
       <div class="section-label fade-up">05 — Contact</div>
       <div class="contact-grid">
-        <div class="contact-left fade-up">
+        <div class="contact-copy fade-up">
           <h2 class="section-title">Thanks for taking<br /><span class="accent-text">the time to reach out.</span></h2>
           <p class="contact-desc">How can I help you today? I'm available for new projects, collaborations, or just a friendly conversation about web development and marketing.</p>
+        </div>
+        <form class="contact-form fade-up" id="contact-form" action="https://formspree.io/f/mgoprqee" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="New message from homeroluzardo.com" />
+          <button type="submit" class="btn-primary btn-full">Send Message ✉️</button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+        <div class="contact-meta fade-up">
           <div class="social-links">
             <!--<a href="https://www.linkedin.com/in/homeroluzardo" target="_blank" rel="noopener noreferrer" class="social-link">
               <span class="social-icon">in</span> LinkedIn
@@ -307,23 +326,6 @@
             <a href="#home" class="btn-ghost">Back to Top ↑</a>
           </div>
         </div>
-        <form class="contact-form fade-up" id="contact-form" action="https://formspree.io/f/mgoprqee" method="POST">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
-          </div>
-          <input type="hidden" name="_subject" value="New message from homeroluzardo.com" />
-          <button type="submit" class="btn-primary btn-full">Send Message ✉️</button>
-          <div class="form-status" id="form-status"></div>
-        </form>
       </div>
     </div>
   </section>

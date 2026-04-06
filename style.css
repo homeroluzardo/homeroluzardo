@@ -438,9 +438,17 @@ ul { list-style: none; }
    ========================================= */
 .contact-section { background: var(--bg); }
 .contact-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 6rem; align-items: start;
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  grid-template-areas:
+    "copy form"
+    "meta form";
+  gap: 2rem 6rem;
+  align-items: start;
 }
+.contact-copy { grid-area: copy; }
+.contact-form { grid-area: form; }
+.contact-meta { grid-area: meta; }
 .contact-desc {
   color: var(--text-muted); font-size: 1rem;
   margin-bottom: 2rem; line-height: 1.7;
@@ -543,7 +551,14 @@ ul { list-style: none; }
   .card-3 { left: -5%; }
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .tools-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "form"
+      "meta";
+    gap: 2rem;
+  }
   .stats-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .nav-links, .nav-cta { display: none; }
   .hamburger { display: flex; }
