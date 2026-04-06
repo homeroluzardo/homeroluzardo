@@ -234,3 +234,7 @@ document.addEventListener('mousemove', (e) => {
 
 console.log('%c✌️ Homero Luzardo — Frontend Developer', 'color:#f5a623;font-family:monospace;font-size:14px;font-weight:bold;');
 console.log('%c🌐 homeroluzardo.com', 'color:#8a8790;font-family:monospace;font-size:11px;');
+
+// ---- AÑO DINÁMICO EN FOOTER ----
+document.querySelector('.footer-copy').innerHTML = 
+  `© ${new Date().getFullYear()} Homero Luzardo. Built with ❤️ in Denver, CO.`;
