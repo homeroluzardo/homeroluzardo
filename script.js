@@ -2,27 +2,52 @@
    HOMERO LUZARDO PORTFOLIO — script.js
    ========================================= */
 
-// ---- CUSTOM CURSOR ----
-const cursor = document.getElementById('cursor');
-const follower = document.getElementById('cursor-follower');
-let mouseX = 0, mouseY = 0;
-let followerX = 0, followerY = 0;
+// ---- CUSTOM CURSOR (solo en dispositivos con mouse) ----
+const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
 
-document.addEventListener('mousemove', (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-  cursor.style.left = mouseX + 'px';
-  cursor.style.top = mouseY + 'px';
-});
+if (isTouchDevice) {
+  document.getElementById('cursor').style.display = 'none';
+  document.getElementById('cursor-follower').style.display = 'none';
+  document.body.style.cursor = 'auto';
+} else {
+  const cursor = document.getElementById('cursor');
+  const follower = document.getElementById('cursor-follower');
+  let mouseX = 0, mouseY = 0;
+  let followerX = 0, followerY = 0;
 
-function animateFollower() {
-  followerX += (mouseX - followerX) * 0.1;
-  followerY += (mouseY - followerY) * 0.1;
-  follower.style.left = followerX + 'px';
-  follower.style.top = followerY + 'px';
-  requestAnimationFrame(animateFollower);
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+  });
+
+  function animateFollower() {
+    followerX += (mouseX - followerX) * 0.1;
+    followerY += (mouseY - followerY) * 0.1;
+    follower.style.left = followerX + 'px';
+    follower.style.top = followerY + 'px';
+    requestAnimationFrame(animateFollower);
+  }
+  animateFollower();
+
+  document.querySelectorAll('a, button, .project-card, .skill-category').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.width = '12px';
+      cursor.style.height = '12px';
+      follower.style.width = '56px';
+      follower.style.height = '56px';
+      follower.style.opacity = '0.3';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.width = '8px';
+      cursor.style.height = '8px';
+      follower.style.width = '36px';
+      follower.style.height = '36px';
+      follower.style.opacity = '1';
+    });
+  });
 }
-animateFollower();
 
 // Cursor hover effects
 document.querySelectorAll('a, button, .project-card, .skill-category').forEach(el => {
