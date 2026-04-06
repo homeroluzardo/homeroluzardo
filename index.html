@@ -307,7 +307,7 @@
             <a href="#home" class="btn-ghost">Back to Top ↑</a>
           </div>
         </div>
-        <form class="contact-form fade-up" id="contact-form" novalidate>
+        <form class="contact-form fade-up" id="contact-form" action="https://formspree.io/f/homeroeluzardo@gmail.com" method="POST">
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -320,6 +320,7 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
           </div>
+          <input type="hidden" name="_subject" value="New message from homeroluzardo.com" />
           <button type="submit" class="btn-primary btn-full">Send Message ✉️</button>
           <div class="form-status" id="form-status"></div>
         </form>

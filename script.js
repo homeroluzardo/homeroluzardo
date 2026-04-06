@@ -116,37 +116,63 @@ sections.forEach(s => sectionObserver.observe(s));
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const name = form.name.value.trim();
-  const email = form.email.value.trim();
-  const message = form.message.value.trim();
+if (form && status) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
-  if (!name || !email || !message) {
-    status.textContent = 'Please fill in all fields.';
-    status.className = 'form-status error';
-    return;
-  }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    status.textContent = 'Please enter a valid email address.';
-    status.className = 'form-status error';
-    return;
-  }
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
 
-  const btn = form.querySelector('button[type="submit"]');
-  btn.textContent = 'Sending…';
-  btn.disabled = true;
-  status.textContent = '';
+    if (!name || !email || !message) {
+      status.textContent = 'Please fill in all fields.';
+      status.className = 'form-status error';
+      return;
+    }
 
-  setTimeout(() => {
-    btn.textContent = 'Send Message ✉️';
-    btn.disabled = false;
-    status.textContent = '✓ Message sent! I\'ll get back to you shortly.';
-    status.className = 'form-status success';
-    form.reset();
-    setTimeout(() => { status.textContent = ''; status.className = 'form-status'; }, 5000);
-  }, 1400);
-});
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      status.textContent = 'Please enter a valid email address.';
+      status.className = 'form-status error';
+      return;
+    }
+
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.textContent;
+
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    status.textContent = '';
+    status.className = 'form-status';
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        form.reset();
+        status.textContent = "Message sent successfully. I'll get back to you shortly.";
+        status.className = 'form-status success';
+      } else {
+        const data = await response.json().catch(() => null);
+        status.textContent =
+          data?.errors?.[0]?.message ||
+          'Form submission failed. Please verify your Formspree endpoint and try again.';
+        status.className = 'form-status error';
+      }
+    } catch (error) {
+      status.textContent = 'Network error. Please try again.';
+      status.className = 'form-status error';
+    } finally {
+      btn.textContent = originalText;
+      btn.disabled = false;
+    }
+  });
+}
 
 // ---- PARALLAX BG TEXT ----
 const bgText = document.querySelector('.hero-bg-text');
